@@ -1,0 +1,11 @@
+#:schema node_modules/wrangler/config-schema.json
+name = "ikihaji-tube-api"
+main = "src/index.ts"
+compatibility_date = "2024-05-12"
+compatibility_flags = ["nodejs_compat"]
+
+[[d1_databases]]
+binding = "DB" # i.e. available in your Worker on env.DB
+database_name = "ikihaji-tube-api"
+database_id = "<YOUR_DATABASE_ID>"
+migrations_dir = "prisma/migrations"
