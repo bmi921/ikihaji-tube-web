@@ -1,3 +1,26 @@
+```sh
+git clone https://github.com/bmi921/ikihaji-tube-web.git
+cd ./ikihaji-tube-web
+npm install
+```
+
+DB作成
+
+```sh
+cd apps/api
+npx wrangler d1 create ikihaji-tube-api
+```
+
+DB作成時に出力されたidを
+apps/api/wrangler.tomlファイルに追記
+
+```sh
+[[d1_databases]]
+binding = "DB"
+database_name = "ikihaji-tube-api"
+database_id = "<DATABASE_ID>"
+```
+
 # Turborepo starter
 
 This is an official starter Turborepo.
