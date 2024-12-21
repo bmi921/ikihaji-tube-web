@@ -1,1 +1,1 @@
-type Bindings = {DB: D1Database};
+type Bindings = { DB: D1Database };

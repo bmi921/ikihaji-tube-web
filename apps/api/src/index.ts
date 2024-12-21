@@ -1,5 +1,11 @@
 import { PrismaD1 } from "@prisma/adapter-d1";
-import { PrismaClient, User } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
+
+type User = {
+  name: string;
+  email: string;
+};
+
 import { Hono } from "hono";
 import { contextPrisma } from "./prisma";
 
