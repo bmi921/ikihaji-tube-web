@@ -7,5 +7,5 @@ compatibility_flags = ["nodejs_compat"]
 [[d1_databases]]
 binding = "DB" # i.e. available in your Worker on env.DB
 database_name = "ikihaji-tube-api"
-database_id = "<YOUR_DATABASE_ID>"
+database_id = "${DATABASE_ID}"
 migrations_dir = "prisma/migrations"
